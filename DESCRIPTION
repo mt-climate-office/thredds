@@ -1,0 +1,11 @@
+Package: threddr
+Version: 0.0.0.9000
+Title: Access to THREDDS Servers
+Description: The threddr package provides simple access to THREDDS gridded data servers from R.
+Authors@R: person("Kyle", "Bocinsky", email = "bocinsky@gmail.com", role = c("aut", "cre"))
+Depends: R (>= 3.4.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Url: https://github.com/bocinsky/threddr
+BugReports: https://github.com/bocinsky/threddr/issues
