@@ -1,24 +1,39 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-threddr
-=======
 
-[![Travis build status](https://travis-ci.org/bocinsky///threddr.svg?branch=master)](https://travis-ci.org/bocinsky///threddr) [![Coverage status](https://img.shields.io/codecov/c/github/bocinsky/threddr/master.svg)](https://codecov.io/github/bocinsky/threddr?branch=master)
+# thredds
 
-[THREDDS data servers](http://www.unidata.ucar.edu/software/thredds/current/tds/) are webservers that provide access to gridded data—in the form of [NetCDF](https://www.unidata.ucar.edu/software/netcdf/) files—via a handy RESTful API (among other protocols). THREDDS servers not only serve data, but provide tools for subsetting gridded data in space and time on the server, reducing the amount of data the end user must download. **threddr** is an R front end to THREDDS servers designed to make exploration, subsetting, and download of THREDDS data into R as simple as possible.
+[![Travis build
+status](https://travis-ci.org/bocinsky///thredds.svg?branch=master)](https://travis-ci.org/bocinsky///thredds)
+[![Coverage
+status](https://img.shields.io/codecov/c/github/bocinsky/thredds/master.svg)](https://codecov.io/github/bocinsky/thredds?branch=master)
 
-Installation
-------------
+[THREDDS data
+servers](http://www.unidata.ucar.edu/software/thredds/current/tds/) are
+webservers that provide access to gridded data—in the form of
+[NetCDF](https://www.unidata.ucar.edu/software/netcdf/) files—via a
+handy RESTful API (among other protocols). THREDDS servers not only
+serve data, but provide tools for subsetting gridded data in space and
+time on the server, reducing the amount of data the end user must
+download. **thredds** is an R front end to THREDDS servers designed to
+make exploration, subsetting, and download of THREDDS data into R as
+simple as possible.
+
+## Installation
 
 You can install threddr from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("bocinsky/threddr")
+devtools::install_github("bocinsky/thredds")
 ```
 
 <!-- ## Example -->
+
 <!-- This is a basic example which shows you how to solve a common problem: -->
+
 <!-- ```{r example} -->
+
 <!-- ## basic example code -->
+
 <!-- ``` -->

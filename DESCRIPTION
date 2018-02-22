@@ -1,4 +1,4 @@
-Package: threddr
+Package: thredds
 Version: 0.0.0.9000
 Title: Access to THREDDS Servers
 Description: The threddr package provides simple access to THREDDS gridded data servers from R.
