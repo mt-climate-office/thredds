@@ -1,4 +1,4 @@
-utils::suppressForeignCheck(c('html',
+utils::globalVariables(c('html',
                             'path',
                             'html',
                             'ol',
