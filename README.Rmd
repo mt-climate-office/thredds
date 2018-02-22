@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# threddr
+[![Travis build status](https://travis-ci.org/bocinsky///threddr.svg?branch=master)](https://travis-ci.org/bocinsky///threddr)
+[![Coverage status](https://img.shields.io/codecov/c/github/bocinsky/threddr/master.svg)](https://codecov.io/github/bocinsky/threddr?branch=master)
+
+[THREDDS data servers](http://www.unidata.ucar.edu/software/thredds/current/tds/) are webservers that provide access to gridded data—in the form of [NetCDF](https://www.unidata.ucar.edu/software/netcdf/) files—via a handy RESTful API (among other protocols). THREDDS servers not only serve data, but provide tools for subsetting gridded data in space and time on the server, reducing the amount of data the end user must download. **threddr** is an R front end to THREDDS servers designed to make exploration, subsetting, and download of THREDDS data into R as simple as possible.
+
+## Installation
+
+You can install threddr from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("bocinsky/threddr")
+```
+
+<!-- ## Example -->
+
+<!-- This is a basic example which shows you how to solve a common problem: -->
+
+<!-- ```{r example} -->
+<!-- ## basic example code -->
+<!-- ``` -->

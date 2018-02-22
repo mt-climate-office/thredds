@@ -9,3 +9,17 @@ Encoding: UTF-8
 LazyData: true
 Url: https://github.com/bocinsky/threddr
 BugReports: https://github.com/bocinsky/threddr/issues
+Suggests:
+    covr,
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Imports: magrittr,
+    dplyr,
+    tibble,
+    xml2,
+    httr,
+    purrr,
+    stringr
