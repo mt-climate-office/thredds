@@ -4,9 +4,9 @@
 # thredds
 
 [![Travis build
-status](https://travis-ci.org/bocinsky/thredds.svg?branch=master)](https://travis-ci.org/bocinsky/thredds)
+status](https://travis-ci.org/mt-climate-office/thredds.svg?branch=master)](https://travis-ci.org/mt-climate-office/thredds)
 [![Coverage
-status](https://img.shields.io/codecov/c/github/bocinsky/thredds/master.svg)](https://codecov.io/github/bocinsky/thredds?branch=master)
+status](https://img.shields.io/codecov/c/github/mt-climate-office/thredds/master.svg)](https://codecov.io/github/mt-climate-office/thredds?branch=master)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/thredds)](https://cran.r-project.org/package=thredds)
 
 [THREDDS data
@@ -156,7 +156,7 @@ CCSM4 <- tds_ncss_download(ncss_url = loca_ncss,
                            vars = c("tasmax_CCSM4_r6i1p1_rcp45","tasmax_CCSM4_r6i1p1_rcp85"))
 
 CCSM4
-#> [1] "/var/folders/jt/hhw0gdbj08bdxsbw15rcx_j40000gn/T//Rtmp6JULYC/CCSM4.nc"
+#> [1] "/var/folders/jt/hhw0gdbj08bdxsbw15rcx_j40000gn/T//RtmpEx2MOX/CCSM4.nc"
 ```
 
 The `tds_ncss_download` function outputs the path to the downloaded
