@@ -1,14 +1,19 @@
 Package: thredds
 Version: 0.0.1
 Title: Access to THREDDS Servers
-Description: The thredds package provides simple access to THREDDS gridded data servers from R.
+Description: THREDDS data servers are webservers that provide access to gridded data—
+  in the form of NetCDF files—via a handy RESTful API (among other protocols). 
+  THREDDS servers not only serve data, but provide tools for subsetting gridded data 
+  in space and time on the server, reducing the amount of data the end user must download. 
+  The thredds package is an R front end to THREDDS servers designed to make exploration, 
+  subsetting, and download of THREDDS data into R as simple as possible.
 Authors@R: person("Kyle", "Bocinsky", email = "bocinsky@gmail.com", role = c("aut", "cre"))
 Depends: R (>= 3.4.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Url: https://github.com/bocinsky/thredds
-BugReports: https://github.com/bocinsky/thredds/issues
+Url: https://github.com/mt-climate-office/thredds
+BugReports: https://github.com/mt-climate-office/thredds/issues
 Suggests:
     covr,
     testthat,
