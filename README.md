@@ -4,7 +4,7 @@
 # thredds
 
 [![Travis build
-status](https://travis-ci.org/bocinsky///thredds.svg?branch=master)](https://travis-ci.org/bocinsky///thredds)
+status](https://travis-ci.org/bocinsky/thredds.svg?branch=master)](https://travis-ci.org/bocinsky/thredds)
 [![Coverage
 status](https://img.shields.io/codecov/c/github/bocinsky/thredds/master.svg)](https://codecov.io/github/bocinsky/thredds?branch=master)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/thredds)](https://cran.r-project.org/package=thredds)
