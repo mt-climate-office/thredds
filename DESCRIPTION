@@ -1,25 +1,29 @@
 Package: thredds
 Version: 0.0.0.9000
 Title: Access to THREDDS Servers
-Description: The threddr package provides simple access to THREDDS gridded data servers from R.
+Description: The thredds package provides simple access to THREDDS gridded data servers from R.
 Authors@R: person("Kyle", "Bocinsky", email = "bocinsky@gmail.com", role = c("aut", "cre"))
 Depends: R (>= 3.4.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Url: https://github.com/bocinsky/threddr
-BugReports: https://github.com/bocinsky/threddr/issues
+Url: https://github.com/bocinsky/thredds
+BugReports: https://github.com/bocinsky/thredds/issues
 Suggests:
     covr,
     testthat,
     knitr,
-    rmarkdown
+    rmarkdown,
+    raster,
+    tidyverse
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
 Imports: magrittr,
     dplyr,
     tibble,
     xml2,
     httr,
     purrr,
-    stringr
+    stringr,
+    sf
