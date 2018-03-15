@@ -1,5 +1,5 @@
 Package: thredds
-Version: 0.0.0.9000
+Version: 0.0.1
 Title: Access to THREDDS Servers
 Description: The thredds package provides simple access to THREDDS gridded data servers from R.
 Authors@R: person("Kyle", "Bocinsky", email = "bocinsky@gmail.com", role = c("aut", "cre"))
