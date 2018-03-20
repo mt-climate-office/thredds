@@ -4,8 +4,8 @@
 \alias{tds_ncss_download}
 \title{Download a THREDDS dataset via a NetcdfSubset service}
 \usage{
-tds_ncss_download(ncss_url, out_file, bbox = NULL, vars = NULL,
-  add_args = NULL, overwrite = TRUE, ...)
+tds_ncss_download(ncss_url, out_file, bbox, vars = NULL, ncss_args = NULL,
+  overwrite = TRUE, ...)
 }
 \arguments{
 \item{ncss_url}{The url of a THREDDS NetcdfSubset service,
@@ -21,7 +21,7 @@ Defaults to NULL, which will download the entire NetCDF dataset.}
 perhaps retrieved using tds_ncss_list_vars.
 Defaults to all available variables.}
 
-\item{add_args}{A named list of additional NetcdfSubset arguments for the URL.}
+\item{ncss_args}{A named list of additional NetcdfSubset arguments for the URL.}
 
 \item{overwrite}{A logical; whether to overwrite the downloaded file if it exists.
 Defaults to 'TRUE'.}

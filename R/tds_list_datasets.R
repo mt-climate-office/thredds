@@ -28,7 +28,7 @@ tds_list_datasets <- function(thredds_url,
       stringr::str_remove("([^/]+$)")
   } else thredds_url
 
-  base_url_parsed <- httr::parse_url(thredds_url)
+  base_url_parsed <- httr::parse_url(thredds_url_base)
   base_url_parsed$query <- NULL
   # base_url_parsed$path <- NULL
 

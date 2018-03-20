@@ -11,7 +11,7 @@
 #' Defaults to all available variables.
 #' @param overwrite A logical; whether to overwrite the downloaded file if it exists.
 #' Defaults to 'TRUE'.
-#' @param add_args A named list of additional NetcdfSubset arguments for the URL.
+#' @param ncss_args A named list of additional NetcdfSubset arguments for the URL.
 #' @param ... Other arguments passed on to [httr::GET()].
 #'
 #' @return The path to the downloaded dataset.
@@ -32,9 +32,9 @@
 #'                   out_file = paste0(out.dir,"/macav2metdata_monthly_historical.nc"))
 tds_ncss_download <- function(ncss_url,
                                   out_file,
-                                  bbox = NULL,
+                                  bbox,
                                   vars = NULL,
-                                  add_args = NULL,
+                                  ncss_args = NULL,
                                   overwrite = TRUE,
                                   ...
 ){
@@ -51,11 +51,10 @@ tds_ncss_download <- function(ncss_url,
                 north = bbox[["ymax"]],
                 west = bbox[["xmin"]],
                 east = bbox[["xmax"]],
-                south = bbox[["ymin"]],
-                temporal = "all")
+                south = bbox[["ymin"]])
 
-  if(!is.null(add_args))
-    query %<>% c(add_args)
+  if(!is.null(ncss_args))
+    query %<>% c(ncss_args)
 
   if(missing(out_file))
     out_file <- stringr::str_c("./",basename(base_url),".nc")
