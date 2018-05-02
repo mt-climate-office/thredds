@@ -152,11 +152,12 @@ create a temporary location to put the file for now.
 ``` r
 CCSM4 <- tds_ncss_download(ncss_url = loca_ncss,
                            out_file = paste0(tempdir(),"/CCSM4.nc"),
-                           bbox = sf::st_bbox(c(xmin = -116, xmax = -115, ymin = 44, ymax = 45)),
-                           vars = c("tasmax_CCSM4_r6i1p1_rcp45","tasmax_CCSM4_r6i1p1_rcp85"))
+                           bbox = sf::st_bbox(c(xmin = -116.5, xmax = -115, ymin = 44.5, ymax = 45)),
+                           vars = c("tasmax_CCSM4_r6i1p1_rcp45","tasmax_CCSM4_r6i1p1_rcp85"),
+                           ncss_args = list(temporal = "all"))
 
 CCSM4
-#> [1] "/var/folders/jt/hhw0gdbj08bdxsbw15rcx_j40000gn/T//RtmpEx2MOX/CCSM4.nc"
+#> [1] "/var/folders/jt/hhw0gdbj08bdxsbw15rcx_j40000gn/T//RtmpJDeuJ3/CCSM4.nc"
 ```
 
 The `tds_ncss_download` function outputs the path to the downloaded
